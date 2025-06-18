@@ -1,17 +1,17 @@
 //
-//  ActionSampleUITests.m
-//  ActionSampleUITests
+//  actionsampleUITests.m
+//  actionsampleUITests
 //
-//  Created by 정종현 on 5/19/25.
+//  Created by 정종현 on 6/18/25.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ActionSampleUITests : XCTestCase
+@interface actionsampleUITests : XCTestCase
 
 @end
 
-@implementation ActionSampleUITests
+@implementation actionsampleUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -34,13 +34,13 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-//- (void)testLaunchPerformance {
-//    if (@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *)) {
-//        // This measures how long it takes to launch your application.
-//        [self measureWithMetrics:@[[[XCTApplicationLaunchMetric alloc] init]] block:^{
-//            [[[XCUIApplication alloc] init] launch];
-//        }];
-//    }
-//}
+- (void)testLaunchPerformance {
+    if (@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *)) {
+        // This measures how long it takes to launch your application.
+        [self measureWithMetrics:@[[[XCTApplicationLaunchMetric alloc] init]] block:^{
+            [[[XCUIApplication alloc] init] launch];
+        }];
+    }
+}
 
 @end
